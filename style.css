@@ -608,7 +608,7 @@ display: block;
   background-color: var(--btnColor);
 }
 .intro_sections{
-  background-image: url(../imgs/clinic_03.jpg);
+  background-image: url(./imgs/clinic_03.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
