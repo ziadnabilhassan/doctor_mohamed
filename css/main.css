@@ -127,7 +127,80 @@ section {
 .navbar  #nav-check {
   display: none;
 }
+.navbar {
+      height: 75px;
+      width: 100%;
+      background-color: transparent;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      z-index: 92212554454554541212;
+    }
 
+    .navbar .nav-links {
+      margin-left: auto;
+      font-size: 18px;
+      display: flex;
+    }
+
+    .navbar .nav-links .nav-item {
+      display: inline-block;
+      padding: 13px 10px;
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      transition: all ease-in 0.3s;
+    }
+
+    .navbar .nav-links .nav-item i {
+      margin-left: 5px;
+      display: inline-block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .nav-links .nav-item:hover i {
+      transform: rotate(180deg); /* Rotate the arrow on hover */
+    }
+
+    .navbar .nav-links .nav-item:hover {
+      color: #3498db;
+    }
+
+    /* Hidden submenu */
+    .navbar .nav-links .nav-item .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      color: #333;
+      padding: 10px;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    /* Display submenu when hovering over the nav item */
+    .navbar .nav-links .nav-item:hover .submenu {
+      display: block;
+    }
+
+    /* Style for the submenu items */
+    .navbar .nav-links .nav-item .submenu a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar .nav-links .nav-item .submenu a:hover {
+      background-color: #3498db;
+      color: #fff;
+    }
 
 .services_menu {
   position: absolute;
